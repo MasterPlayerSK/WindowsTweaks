@@ -2,7 +2,7 @@
 cls
 :OPTIONS
 echo Enter transparency value between 0 and 255 (0 means transparent, 255 means opaque):
-set /P opacity=">> 
+set /P opacity=">> 0
 
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v TaskbarAcrylicOpacity /t REG_DWORD /d %opacity% /f
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize /v ColorPrevalence /t REG_DWORD /d 0 /f
